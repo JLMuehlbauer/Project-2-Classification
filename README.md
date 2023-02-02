@@ -1,45 +1,48 @@
-#Stroke Predictor
-##Analysis and Classification of Strokes
+# Stroke Predictor
+
+## Analysis and Classification of Strokes
 
 **Author:** Jackson Muehlbauer
 
 **Date:** 2/2/23
 
-###Business Case:
+### Business Case:
 
 
-###Description of Data:
+### Description of Data:
+**Dictionary**
+<img src="stroke_dictionary.png" width=65% height=65%>
 
-###Methods:
+### Methods:
 
-###Exploratory Data Analysis:
+### Exploratory Data Analysis:
 
-####Numerical Features:
+#### Numerical Features:
 
-####Categorical Features:
+#### Categorical Features:
 
-###Explanatory Data Analysis
+### Explanatory Data Analysis
 
 > **Interpretation**
 
 
-##Machine Learning
+## Machine Learning
 
-###Model Evaluation
+### Model Evaluation
 
-###Preprocessing
+### Preprocessing
 
-###XGBoost
+### XGBoost
 
-###Linear Regression
+### Linear Regression
 
-###KNN
+### KNN
 
-####PCA
+#### PCA
 
-##Model Recommendations
+## Model Recommendations
 
-##Limitations & Next Steps
+## Limitations & Next Steps
 
 #### For further information
 

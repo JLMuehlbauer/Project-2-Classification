@@ -28,7 +28,9 @@ Each row in this dataset corresponds to information regarding an individual pati
 
 ### Explanatory Data Analysis
 
+<img src="age_stroke.png" width=65% height=65%>
 > **Interpretation**
+> Patients that experience strokes tend to be older. The smaller standard deviation for the strokes havers indicates a tighter distribution around the older ages. This could also be related to age being correlated to other potential risk factors such as heart disease.
 
 
 ## Machine Learning
@@ -49,7 +51,7 @@ Each row in this dataset corresponds to information regarding an individual pati
 Overall, the best tested model was the Logistic Regression model with SMOTE sampling, PCA with 95% retained variance, and the following hyperparameters:
 
 
-{'logisticregression__C': 0.005, 'logisticregression__solver': 'lbfgs'}
+{'C': 0.005, 'solver': 'lbfgs'}
 
 
 This model had the best combination of f1, accuracy, ROC AUC and most importantly, recall scores. Recall was the primary evaluation metric due to the high cost of false negatives; however, there were cases when the recall score was high but there was a significant reduction in the other 3 scores. This means that the model was signicantly over predicting that people would have a stroke. While this certainly cut down on false negatives, the cost over so many false positives would be difficult to justify. Without knowing exact the cost of false negatives compared to that of false positives, the chosen model seemed to have the best combination of 4 metrics. The values of which are shown below:

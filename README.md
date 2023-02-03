@@ -29,7 +29,7 @@ Each numerical feature was plotted as a histogram and a boxplot. This was done t
 #### Categorical Features:
 Each categorical feature was plotted as a frequency bar chart to show the breakdowns for each class. It was determined that many of the features such as hypertension and heart disease had significant class imbalances. In addition to this, the target stroke column was also severely imbalanced to the point that only around 5% of individuals experience strokes. See the breakdown of the target below.
 
-<img src="stroke.png" width=65% height=65%>
+<img src="strokes.png" width=65% height=65%>
 
 
 ### Explanatory Data Analysis
@@ -75,16 +75,32 @@ The following three models (including a dummy model) were fit on the training da
 
 PCA was implemented on SMOTE sampled data and fed to a logistic regression model that was then evaluated. By comparing the metrics from this model to the base logistic regression model, it was determined that PCA had a positive impact on the model performance. 
 
-#### GridSearchCV
-
+### Hyperparameter Tuning
+It was determined that XGBoost and Logistic regression had considerably higher
 
 ### XGBoost
-The best performing
+The best performing model post tuning:
+Used: Undersampling and PCA 
+
+| Recall | f1 | ROC AUC | Accuracy |
+|--------|----|---------|----------|
+| 0.77   |0.23|  0.82  |    0.75   |
 
 ### Linear Regression
+The best performing model post tuning:
+Used: SMOTE and PCA
+
+| Recall | f1 | ROC AUC | Accuracy |
+|--------|----|---------|----------|
+| 0.81   |0.23|  0.84  |    0.74   |
 
 ### KNN
+KNN hyperparameters were not tuned as it did not perform nearly as well as the other two models. The best model is shown below:
+Used: Undersampling
 
+| Recall | f1 | ROC AUC | Accuracy |
+|--------|----|---------|----------|
+| 0.81   |0.19|  0.78  |    0.67   |
 
 
 ## Model Recommendations

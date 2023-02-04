@@ -76,7 +76,7 @@ The following three models (including a dummy model) were fit on the training da
 PCA was implemented on SMOTE sampled data and fed to a logistic regression model that was then evaluated. By comparing the metrics from this model to the base logistic regression model, it was determined that PCA had a positive impact on the model performance. 
 
 ### Hyperparameter Tuning
-It was determined that XGBoost and Logistic regression had considerably higher
+It was determined that XGBoost and Logistic regression had considerably higher metrics on the untuned model. Thus, these were the models that were tuned using GridSearchCV.
 
 ### XGBoost
 The best performing model post tuning:

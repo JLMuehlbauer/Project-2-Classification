@@ -110,7 +110,7 @@ Overall, the best tested model was the Logistic Regression model with SMOTE samp
 {'C': 0.005, 'solver': 'lbfgs'}
 
 
-This model had the best combination of f1, accuracy, ROC AUC and most importantly, recall scores. Recall was the primary evaluation metric due to the high cost of false negatives; however, there were cases when the recall score was high but there was a significant reduction in the other 3 scores. This means that the model was signicantly over predicting that people would have a stroke. While this certainly cut down on false negatives, the cost over so many false positives would be difficult to justify. Without knowing exact the cost of false negatives compared to that of false positives, the chosen model seemed to have the best combination of 4 metrics. The values of which are shown below:
+This model had the best combination of f1, accuracy, ROC AUC and most importantly, recall scores. Recall was the primary evaluation metric due to the high cost of false negatives; however, there were cases when the recall score was high but there was a significant reduction in the other 3 scores. This means that the model was signicantly over predicting that people would have a stroke. While this certainly cut down on false negatives, the cost of so many false positives would be difficult to justify. Without knowing exact the cost of false negatives compared to that of false positives, the chosen model seemed to have the best combination of 4 metrics. The values of which are shown below:
 
 
 | Recall | f1 | ROC AUC | Accuracy |
@@ -120,7 +120,7 @@ This model had the best combination of f1, accuracy, ROC AUC and most importantl
 
 ## Limitations & Next Steps
 
-Overall, none of the models were particularly high performing including the chosen "best" model. I would have serious concerns with implementing this model to make actionable decisions such as medication or other treatments. There are simply too many false negatives and false positives for this to be an extremely effective and high confidence tool. That said, it could be used by a physician as an internal "at-risk" marking tool. This would allow the physician to keep a closer eye on patients that may have a higher risk strokes. This may led to more extensive screenings to the extremely at-risk group which could potentially save lives. It could also be used to recommend healthier to certain at risk people. 
+Overall, none of the models were particularly high performing including the chosen "best" model. I would have serious concerns with implementing this model to make actionable decisions such as medication or other treatments. There are simply too many false negatives and false positives for this to be an extremely effective and high confidence tool. That said, it could be used by a physician as an internal "at-risk" marking tool. This would allow the physician to keep a closer eye on patients that may have a higher risk strokes. This may led to more extensive screenings to the extremely at-risk group which could potentially save lives. It could also be used to recommend healthier lifestyles to certain at risk people. 
 
 
 #### For further information
